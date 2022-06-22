@@ -18,20 +18,20 @@ class MoreState extends State<More> {
         scrollDirection: Axis.vertical,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Container(
-                child: Text(
+                child: const Text(
               'More',
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             )),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Container(
             width: double.infinity,
-            height: 1100,
-            decoration: BoxDecoration(
+            height: 1300,
+            decoration: const BoxDecoration(
                 color: Colors.black87,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(25),
@@ -47,18 +47,18 @@ class MoreState extends State<More> {
                     child: Row(
                       children: [
                         Container(
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             radius: 20,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
                           child: Column(
                             children: [
                               Container(
-                                  child: Text(
+                                  child: const Text(
                                 'RK',
                                 style: TextStyle(
                                     fontSize: 15,
@@ -66,7 +66,7 @@ class MoreState extends State<More> {
                                     color: Colors.white),
                               )),
                               Container(
-                                  child: Text(
+                                  child: const Text(
                                 'View Profile',
                                 style: TextStyle(
                                     fontSize: 12, color: Colors.white),
@@ -80,106 +80,268 @@ class MoreState extends State<More> {
                 ),
                 Expanded(
                   child: GridView.count(
+                    physics: const NeverScrollableScrollPhysics(),
                     primary: false,
-                    padding: const EdgeInsets.all(20),
+                    padding: const EdgeInsets.all(10),
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
                     crossAxisCount: 2,
                     children: <Widget>[
                       Container(
-                        child: Center(
-                          child: Image.asset(
-                            "assets/images/Events.png",
-                            
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/Events.png",),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('Events',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
-                          
+                          ],
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Image.asset("assets/images/Booking History.png"),
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/Booking History.png"),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('Booking History',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                          ],
+                        ),
+                        
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/My Account.png"),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('My Account',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                          ],
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Image.asset("assets/images/My Account.png"),
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/Saved.png"),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('Saved',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                          ],
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Image.asset("assets/images/Saved.png"),
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/Membership.png"),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('Membership',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                          ],
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Image.asset("assets/images/Membership.png"),
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/Refer and Earn.png"),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('Refer and Earn',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                          ],
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Image.asset("assets/images/Refer and Earn.png"),
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/Advertise with us.png"),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('Advertise with us',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                          ],
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Image.asset("assets/images/Advertise with us.png"),
+                        decoration: BoxDecoration(
+                        color: Color.fromARGB(221, 14, 61, 61),
+                        borderRadius: BorderRadius.circular(25),
                         ),
-                      ),
-                      Container(
-                        child: Center(
-                          child: Image.asset("assets/images/Setting.png"),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/images/Setting.png"),
+                            const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              child: Text('Settings',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
                 ),
-                Container(
-                  child: Image.asset("assets/images/Visit Website.png"),
+                Divider(
+                  color: Colors.white,),
+                Container(child: 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/Visit Website.png"),
+                      const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                              child: Text('Visit Website',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                    ],
+                  )
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  child: Image.asset("assets/images/About Knocksense.png"),
+                  child: 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/About Knocksense.png"),
+                      const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                              child: Text('About Knocksense',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                    ],
+                  )
+                 
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  child: Image.asset("assets/images/Terms and Conditions.png"),
+                  child: 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/Terms and Conditions.png"),
+                      const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                              child: Text('Terms and Conditions',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                    ],
+                  )
+                 
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  child: Image.asset("assets/images/Privacy Policy.png"),
+                  child: 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/Privacy Policy.png"),
+                      const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                              child: Text('Privacy Policy',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                    ],
+                  )
+                
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  child: Image.asset("assets/images/Refun & Concellation Policy.png"),
+                  child: 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/Refun & Concellation Policy.png"),
+                      const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                              child: Text('Refun & Concellation Policy',style: const TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                    ],
+                  )
+                 
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  child: Image.asset("assets/images/Contact.png"),
+                  child: 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/Contact.png"),
+                      const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                              child: Text('Contact Us',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                    ],
+                  )
+                 
                 ),
-                SizedBox(
-                  height: 20,
+                const SizedBox(
+                  height: 10,
                 ),
                 Container(
-                  child: Image.asset("assets/images/Logout.png"),
+                  child: 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset("assets/images/Logout.png"),
+                      const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                              child: Text('Logout',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                            ),
+                    ],
+                  )                
                 ),
-                SizedBox(
+                
+                const SizedBox(
                   height: 30,
-                ),
-
+                ),            
               ],
             ),
           ),
-        ],
+        ],       
       ),
     );
   }

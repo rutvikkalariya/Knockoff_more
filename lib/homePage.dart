@@ -23,11 +23,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan,
+      
       body: _pageOptions[selectedPage],
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.deepPurple,
-        color: Colors.deepPurple.shade200,
         animationDuration: Duration(milliseconds: 350),
         onTap: (index){
             setState(() {
@@ -35,8 +33,8 @@ class _HomePageState extends State<HomePage> {
             });
           },
         items: [
-        Icon(Icons.home, color: Colors.white),
-        Icon(Icons.more, color: Colors.white),
+        Icon(Icons.home, ),
+        Icon(Icons.more, /*color: Colors.white*/),
       ],
       ),
     );

@@ -12,8 +12,10 @@ class KnockOff extends StatefulWidget {
 class KnockOffState extends State<KnockOff> {
   @override
   Widget build(BuildContext context) {
-
+  
   return Scaffold(
+    
+    backgroundColor: Colors.cyan,
     body: ListView(
         scrollDirection: Axis.vertical,
         children: [
@@ -53,31 +55,33 @@ class KnockOffState extends State<KnockOff> {
           ),
           const SizedBox(height: 20,),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
             child: Container(
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      const Icon(Icons.newspaper),
-                      const Text("Daily news digest at your preferred time"),
-                    ],
-                  ),
-                  const SizedBox(height: 10,),
-                  Row(
-                    children: [
-                      const Icon(Icons.newspaper),
-                      const Text("Exclusive Deels and Offers"),
-                    ],
-                  ),
-                  const SizedBox(height: 10,),
-                  Row(
-                    children: [
-                      const Icon(Icons.newspaper),
-                      const Text("Zero Convenience fee on event booking."),
-                    ],
-                  )
-                ],
+              child: Center(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.newspaper),
+                        Text("Daily news digest at your preferred time"),
+                      ],
+                    ),
+                    const SizedBox(height: 10,),
+                    Row(
+                      children: [
+                        const Icon(Icons.newspaper),
+                        const Text("Exclusive Deels and Offers"),
+                      ],
+                    ),
+                    const SizedBox(height: 10,),
+                    Row(
+                      children: [
+                        const Icon(Icons.newspaper),
+                        const Text("Zero Convenience fee on event booking."),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
@@ -258,7 +262,7 @@ class KnockOffState extends State<KnockOff> {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 10),
+                        horizontal: 10, vertical: 5),
                     child: Container(
                       child: Row(
                         children: [
@@ -313,6 +317,7 @@ class KnockOffState extends State<KnockOff> {
               ),
             ),
           ),
+          
         ],
       ),
   );   

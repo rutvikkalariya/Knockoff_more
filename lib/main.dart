@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:knockoff_more_ui/homePage.dart';
 import 'package:knockoff_more_ui/more.dart';
+import 'package:knockoff_more_ui/tabbar';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
 
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: TabView(),
     );
     
   }
