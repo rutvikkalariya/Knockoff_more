@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:knockoff_more_ui/KnockOFF.dart';
+import 'package:knockoff_more_ui/homePage.dart';
+import 'package:knockoff_more_ui/more.dart';
 
 void main() {
   runApp(const MyApp());
