@@ -97,7 +97,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/Events.png",),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('Events',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -113,7 +113,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/Booking History.png"),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('Booking History',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -130,7 +130,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/My Account.png"),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('My Account',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -146,7 +146,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/Saved.png"),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('Saved',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -162,7 +162,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/Membership.png"),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('Membership',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -178,7 +178,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/Refer and Earn.png"),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('Refer and Earn',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -194,7 +194,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/Advertise with us.png"),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('Advertise with us',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -210,7 +210,7 @@ class MoreState extends State<More> {
                           children: [
                             Image.asset("assets/images/Setting.png"),
                             const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 10),
+                              padding: EdgeInsets.symmetric(horizontal: 20 ,vertical: 15),
                               child: Text('Settings',style: TextStyle(color: Colors.white,fontSize: 15,),),
                             ),
                           ],
@@ -221,118 +221,125 @@ class MoreState extends State<More> {
                 ),
                 Divider(
                   color: Colors.white,),
-                Container(child: 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                Padding(
+                  padding: const EdgeInsets.only(left: 15),
+                  child: Column(
                     children: [
-                      Image.asset("assets/images/Visit Website.png"),
-                      const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
-                              child: Text('Visit Website',style: TextStyle(color: Colors.white,fontSize: 15,),),
-                            ),
+                      Container(child: 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/images/Visit Website.png"),
+                            const Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                                    child: Text('Visit Website',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                                  ),
+                          ],
+                        )
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        child: 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/images/About Knocksense.png"),
+                            const Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                                    child: Text('About Knocksense',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                                  ),
+                          ],
+                        )
+                       
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        child: 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/images/Terms and Conditions.png"),
+                            const Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                                    child: Text('Terms and Conditions',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                                  ),
+                          ],
+                        )
+                       
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        child: 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/images/Privacy Policy.png"),
+                            const Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                                    child: Text('Privacy Policy',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                                  ),
+                          ],
+                        )
+                      
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        child: 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/images/Refun & Concellation Policy.png"),
+                            const Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                                    child: Text('Refun & Concellation Policy',style: const TextStyle(color: Colors.white,fontSize: 15,),),
+                                  ),
+                          ],
+                        )
+                       
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        child: 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/images/Contact.png"),
+                            const Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                                    child: Text('Contact Us',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                                  ),
+                          ],
+                        )
+                       
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        child: 
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Image.asset("assets/images/Logout.png"),
+                            const Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
+                                    child: Text('Logout',style: TextStyle(color: Colors.white,fontSize: 15,),),
+                                  ),
+                          ],
+                        )                
+                      ),
                     ],
-                  )
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/About Knocksense.png"),
-                      const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
-                              child: Text('About Knocksense',style: TextStyle(color: Colors.white,fontSize: 15,),),
-                            ),
-                    ],
-                  )
-                 
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/Terms and Conditions.png"),
-                      const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
-                              child: Text('Terms and Conditions',style: TextStyle(color: Colors.white,fontSize: 15,),),
-                            ),
-                    ],
-                  )
-                 
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/Privacy Policy.png"),
-                      const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
-                              child: Text('Privacy Policy',style: TextStyle(color: Colors.white,fontSize: 15,),),
-                            ),
-                    ],
-                  )
-                
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/Refun & Concellation Policy.png"),
-                      const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
-                              child: Text('Refun & Concellation Policy',style: const TextStyle(color: Colors.white,fontSize: 15,),),
-                            ),
-                    ],
-                  )
-                 
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/Contact.png"),
-                      const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
-                              child: Text('Contact Us',style: TextStyle(color: Colors.white,fontSize: 15,),),
-                            ),
-                    ],
-                  )
-                 
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                Container(
-                  child: 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset("assets/images/Logout.png"),
-                      const Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 15 ,vertical: 15),
-                              child: Text('Logout',style: TextStyle(color: Colors.white,fontSize: 15,),),
-                            ),
-                    ],
-                  )                
+                  ),
                 ),
                 
                 const SizedBox(

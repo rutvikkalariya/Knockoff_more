@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class KnockOff extends StatefulWidget {
   const KnockOff({Key? key}) : super(key: key);
@@ -7,16 +8,32 @@ class KnockOff extends StatefulWidget {
   State<StatefulWidget> createState() {
     return KnockOffState();
   }
+  
 }
+
+/* class TabView extends StatefulWidget {
+  const TabView({Key? key}) : super(key: key);
+
+  @override
+  State<TabView> createState() => _TabViewState();
+}
+
+class _TabViewState extends State<TabView> {
+
+  
+  @override
+  Widget build(BuildContext context) {
+    TabController _tabController = TabController(length: 2, vsync: this);
+    
+  }
+} */
 
 class KnockOffState extends State<KnockOff> {
   @override
   Widget build(BuildContext context) {
-  
-  return Scaffold(
-    
-    backgroundColor: Colors.cyan,
-    body: ListView(
+    return Scaffold(
+      backgroundColor: Colors.cyan,
+      body: ListView(
         scrollDirection: Axis.vertical,
         children: [
           Container(
@@ -24,10 +41,14 @@ class KnockOffState extends State<KnockOff> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   child: Container(
                     child: Column(
-                      children: [const Text("Your Location"), const Text("Mumbai >")],
+                      children: [
+                        const Text("Your Location"),
+                        const Text("Mumbai >")
+                      ],
                     ),
                   ),
                 ),
@@ -35,16 +56,20 @@ class KnockOffState extends State<KnockOff> {
                   child: Row(
                     children: [
                       IconButton(
-                          onPressed: () {}, icon: const Icon(Icons.notification_add)),
+                          onPressed: () {},
+                          icon: const Icon(Icons.notification_add)),
                       IconButton(
-                          onPressed: () {}, icon: const Icon(Icons.search_rounded)),
+                          onPressed: () {},
+                          icon: const Icon(Icons.search_rounded)),
                     ],
                   ),
                 ),
               ],
             ),
           ),
-          const SizedBox(height: 20,),
+          const SizedBox(
+            height: 20,
+          ),
           Container(
             child: const Center(
               child: CircleAvatar(
@@ -53,7 +78,9 @@ class KnockOffState extends State<KnockOff> {
               ),
             ),
           ),
-          const SizedBox(height: 20,),
+          const SizedBox(
+            height: 20,
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
             child: Container(
@@ -66,14 +93,18 @@ class KnockOffState extends State<KnockOff> {
                         Text("Daily news digest at your preferred time"),
                       ],
                     ),
-                    const SizedBox(height: 10,),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
                       children: [
                         const Icon(Icons.newspaper),
                         const Text("Exclusive Deels and Offers"),
                       ],
                     ),
-                    const SizedBox(height: 10,),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
                       children: [
                         const Icon(Icons.newspaper),
@@ -89,9 +120,14 @@ class KnockOffState extends State<KnockOff> {
             height: 15.0,
           ),
           const Center(
-            child: Text("Choose MamberShip Plan",style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Colors.white),),
+            child: Text(
+              "Choose MamberShip Plan",
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            ),
           ),
-          
           const SizedBox(
             height: 10.0,
           ),
@@ -162,7 +198,8 @@ class KnockOffState extends State<KnockOff> {
                           const Icon(
                             Icons.brightness_1,
                           ),
-                          const Text('10 extra unlocks on signing up with a referral code'),
+                          const Text(
+                              '10 extra unlocks on signing up with a referral code'),
                         ],
                       ),
                     ),
@@ -255,14 +292,15 @@ class KnockOffState extends State<KnockOff> {
                           const Icon(
                             Icons.brightness_1,
                           ),
-                          const Text('1 extra unlocks on signing up with a referral code'),
+                          const Text(
+                              '1 extra unlocks on signing up with a referral code'),
                         ],
                       ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 10, vertical: 5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     child: Container(
                       child: Row(
                         children: [
@@ -316,10 +354,12 @@ class KnockOffState extends State<KnockOff> {
                 topRight: Radius.circular(20),
               ),
             ),
+            child: Row(
+              
+            ),
           ),
-          
         ],
       ),
-  );   
- }
+    );
+  }
 }
