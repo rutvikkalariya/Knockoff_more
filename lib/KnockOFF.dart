@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:knockoff_more_ui/tabbarPage/tab1.dart';
+import 'package:knockoff_more_ui/tabbarpage/tab2.dart';
 
 class KnockOff extends StatefulWidget {
   const KnockOff({Key? key}) : super(key: key);
@@ -8,27 +10,24 @@ class KnockOff extends StatefulWidget {
   State<StatefulWidget> createState() {
     return KnockOffState();
   }
-  
 }
 
-/* class TabView extends StatefulWidget {
-  const TabView({Key? key}) : super(key: key);
+class KnockOffState extends State<KnockOff>
+    with SingleTickerProviderStateMixin {
+  late TabController tabController;
 
   @override
-  State<TabView> createState() => _TabViewState();
-}
-
-class _TabViewState extends State<TabView> {
-
-  
-  @override
-  Widget build(BuildContext context) {
-    TabController _tabController = TabController(length: 2, vsync: this);
-    
+  void initState() {
+    tabController = TabController(length: 2, vsync: this);
+    super.initState();
   }
-} */
 
-class KnockOffState extends State<KnockOff> {
+  @override
+  void dispose() {
+    tabController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +36,7 @@ class KnockOffState extends State<KnockOff> {
         scrollDirection: Axis.vertical,
         children: [
           Container(
+            width: MediaQuery.of(context).size.width,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -354,8 +354,66 @@ class KnockOffState extends State<KnockOff> {
                 topRight: Radius.circular(20),
               ),
             ),
-            child: Row(
-              
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Container(
+                height: MediaQuery.of(context).size.height,
+                child: Column(
+                  children: [
+                    SizedBox(height: 50),
+                    Container(
+                      // height: 50,
+                      width: MediaQuery.of(context).size.height,
+                      decoration: BoxDecoration(
+                          color: Colors.white54,
+                          borderRadius: BorderRadius.circular(30)),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(7),
+                            child: TabBar(
+                              unselectedLabelColor: Colors.white,
+                              labelColor: Colors.black,
+                              indicatorColor: Colors.white,
+                              indicatorWeight: 2,
+                              indicator: BoxDecoration(
+                                color: Colors.white54,
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              controller: tabController,
+                              tabs: [
+                                Tab(
+                                    child: Text(
+                                  'Offers & Deals',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )),
+                                Tab(
+                                    child: Text(
+                                  'Events',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      child: TabBarView(
+                        controller: tabController,
+                        children: [
+                          Tab1(),
+                          Tab2(),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
           ),
         ],

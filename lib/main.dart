@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:knockoff_more_ui/homePage.dart';
 import 'package:knockoff_more_ui/more.dart';
-import 'package:knockoff_more_ui/tab_view_screen.dart';
+import 'package:knockoff_more_ui/tabbarPage.dart';
 
 void main() {
   runApp(const MyApp());
